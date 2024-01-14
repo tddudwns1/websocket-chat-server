@@ -7,6 +7,9 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
 import redis.embedded.RedisServer;
 
+/**
+ * 로컬 환경일경우 내장 레디스가 실행됩니다.
+ */
 @Profile("local")
 @Configuration
 public class EmbeddedRedisConfig {
